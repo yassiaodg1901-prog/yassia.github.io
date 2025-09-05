@@ -361,6 +361,18 @@ body {
 
 }
 @media (max-width:600px){
+  /* Section "About" */
   .about{padding:20px;flex-direction:column}
   .about-photo{order:-1;margin-bottom:12px}
+
+  /* Projets en 1 colonne */
+  .cards{grid-template-columns:1fr}
+
+  /* Navigation plus lisible */
+  nav ul{
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+    align-items:center;
   }
+}
