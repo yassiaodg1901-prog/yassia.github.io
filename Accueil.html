@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfolio – OUEDRAOGO Yassia</title>
+  <link rel="stylesheet" href="style.css">
+ 
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="nav-inner">
+      <div class="brand">OUEDRAOGO <span class="plus"></span> Yassia</div>
+      <nav class="nav-links">
+        <a href="#accueil">Accueil</a>
+        <a href="#apropos">À propos</a>
+        <a href="#projets">Projets</a>
+        <a href="#skills">Compétences</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+
+  <main class="hero" id="accueil">
+    <div class="hero-text">
+      <h1>Je suis <span class="accent">Yassia</span>,</h1>
+      <p>Développeur en devenir, passionné par le web et le design </p>
+      <a class="btn" href="https://yassiaodg1901.infinityfreeapp.com/?i=2">Voir mes projets</a>
+    </div>
+
+    <div class="hero-illust" aria-hidden="true">
+       <img src="logo.jpg.jpg" alt="">
+    </div>
+  </main>
+
+
+
+
+  
+  <header class="about">
+    <div class="about-text">
+      <h2>À propos</h2>
+      <p>Je m'appelle <strong>OUEDRAOGO Yassia</strong>, passionné par la création de sites web modernes et interactifs.</p>
+      <p>Étudiant en <em>développement web</em>, j'améliore mes compétences en JavaScript, HTML et CSS.</p>
+      <p>J'adore transformer mes idées en projets concrets et expérimenter avec les nouvelles technologies</p>
+      <a class="btn" id="downloadCv" href="c:\Users\yassi\Downloads\CV OUEDRAOGO YASSIA.pdf" download>Télécharger mon CV</a>
+    </div>
+
+    <div class="about-photo">
+     <img src="c:\Users\yassi\Downloads\PHOTO.png" alt="">
+    </div>
+  </header>
+
+  <main>
+    <section class="projects">
+      <h2>Mes Projets</h2>
+      <div class="cards">
+        <article class="card">
+          <p>Un mini-jeu interactif en JavaScript qui utilise des événements DOM.</p>
+          <div class="tags">#html, #css, #js</div>
+          <a class="btn" href="projet.html">Voir </a>
+        </article>
+
+        <article class="card">
+          <p>Un mini-jeu interactif en JavaScript qui utilise des événements DOM.</p>
+          <div class="tags">#html, #css, #js</div>
+           <a class="btn" href="c:\Users\yassi\OneDrive\Images\Challenge Fevrier\Nos Offres.png">Voir </a>
+        </article>
+
+        <article class="card">
+          <p>Un mini-jeu interactif en JavaScript qui utilise des événements DOM.</p>
+          <div class="tags">#html, #css, #js</div>
+          <button class="see" data-title="Mini-jeu 3">Voir</button>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <section class="cc-wrap" aria-label="Compétences et contact">
+    <div class="cc-skills">
+      <div class="cc-container">
+        <h2 class="cc-title">Mes Compétences</h2>
+        <div class="cc-grid">
+          <div class="cc-card">
+            <h3>Soft Skills</h3>
+            <div class="cc-row">
+              <div class="cc-label">Gestion de projet</div>
+              <div class="cc-track"><div class="cc-fill" style="width:75%"></div></div>
+            </div>
+            <div class="cc-row">
+              <div class="cc-label">Résolution de problème</div>
+              <div class="cc-track"><div class="cc-fill" style="width:85%"></div></div>
+            </div>
+            <div class="cc-row">
+              <div class="cc-label">Adaptabilité</div>
+              <div class="cc-track"><div class="cc-fill" style="width:90%"></div></div>
+            </div>
+          </div>
+
+          <div class="cc-card">
+            <h3>Hard Skills</h3>
+            <div class="cc-row">
+              <div class="cc-label">HTML</div>
+              <div class="cc-track"><div class="cc-fill" style="width:95%"></div></div>
+            </div>
+            <div class="cc-row">
+              <div class="cc-label">CSS</div>
+              <div class="cc-track"><div class="cc-fill" style="width:70%"></div></div>
+            </div>
+            <div class="cc-row">
+              <div class="cc-label">JavaScript</div>
+              <div class="cc-track"><div class="cc-fill" style="width:85%"></div></div>
+            </div>
+            <div class="cc-row">
+              <div class="cc-label">VS Code</div>
+              <div class="cc-track"><div class="cc-fill" style="width:90%"></div></div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="cc-contact">
+      <div class="cc-container">
+        <div class="cc-hero">
+          <strong>Vous avez un <em>projet en tête&nbsp;?</em></strong>
+          <div>N'hésitez pas à me <em>contacter</em></div>
+        </div>
+
+        <form class="cc-form" action="#" method="post">
+          <div class="cc-two">
+            <div class="cc-field">
+              <label for="prenom">Votre prénom</label>
+              <input class="cc-input" type="text" id="prenom" placeholder="ali">
+            </div>
+            <div class="cc-field">
+              <label for="nom">Votre nom</label>
+              <input class="cc-input" type="text" id="nom" placeholder="Ballo">
+            </div>
+          </div>
+          <div class="cc-field">
+            <label for="sujet">Votre sujet</label>
+            <input class="cc-input" type="text" id="sujet" placeholder="Développement d'un site vitrine">
+          </div>
+          <div class="cc-field">
+            <label for="message">Écrivez votre message ici !</label>
+            <textarea class="cc-textarea" id="message" placeholder="Écrivez votre message ici !"></textarea>
+          </div>
+          <button class="cc-btn" type="submit">Envoyer</button>
+        </form>
+      </div>
+    </div>
+
+    <footer class="cc-footer">
+      <div class="cc-foot-row">
+        <div>Designed by <a href="#">Yassia</a> with HTML CSS JS</div>
+        <div>Tous droits réservés - 2025</div>
+      </div>
+    </footer>
+  </section>
+
+  </script>
+
+</body>
+</html>

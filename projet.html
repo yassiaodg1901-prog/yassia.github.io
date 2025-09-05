@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compteur interactif animé</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f0f8ff;
+            margin: 0;
+            padding: 50px;
+            transition: background-color 0.5s;
+        }
+
+        .container {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.2);
+            display: inline-block;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        #counter {
+            font-size: 60px;
+            margin: 20px 0;
+            transition: transform 0.2s, color 0.5s;
+        }
+
+        .buttons button {
+            padding: 12px 25px;
+            margin: 5px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .buttons button:hover {
+            background-color: #add8e6;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Compteur interactif</h1>
+        <p id="counter">0</p>
+        <div class="buttons">
+            <button id="increase">Augmenter</button>
+            <button id="decrease">Diminuer</button>
+            <button id="reset">Réinitialiser</button>
+        </div>
+    </div>
+
+    <script>
+        const counter = document.getElementById('counter');
+        const increaseBtn = document.getElementById('increase');
+        const decreaseBtn = document.getElementById('decrease');
+        const resetBtn = document.getElementById('reset');
+
+        let count = 0;
+
+        function updateCounter() {
+            counter.textContent = count;
+            
+            counter.style.transform = 'scale(1.2)';
+            setTimeout(() => {
+                counter.style.transform = 'scale(1)';
+            }, 150);
+
+           
+            if(count > 0) {
+                counter.style.color = 'green';
+                document.body.style.backgroundColor = '#e6ffed';
+            } else if(count < 0) {
+                counter.style.color = 'red';
+                document.body.style.backgroundColor = '#ffe6e6';
+            } else {
+                counter.style.color = '#333';
+                document.body.style.backgroundColor = '#f0f8ff';
+            }
+        }
+
+        increaseBtn.addEventListener('click', () => {
+            count++;
+            updateCounter();
+        });
+
+        decreaseBtn.addEventListener('click', () => {
+            count--;
+            updateCounter();
+        });
+
+        resetBtn.addEventListener('click', () => {
+            count = 0;
+            updateCounter();
+        });
+    </script>
+</body>
+</html>
