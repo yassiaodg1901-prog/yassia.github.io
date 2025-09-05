@@ -358,4 +358,9 @@ body {
 
 .compteur-buttons button:hover {
     background-color: #add8e6;
+
 }
+@media (max-width:600px){
+  .about{padding:20px;flex-direction:column}
+  .about-photo{order:-1;margin-bottom:12px}
+  }
