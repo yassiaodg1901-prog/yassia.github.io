@@ -66,7 +66,7 @@ body{
 
 .hero p{
   margin:0 0 22px;
-  color:var(--muted);
+  color:black(--muted);
   font-size:18px;
 }
 .btn{
@@ -376,5 +376,6 @@ body {
     align-items:center;
   }
 }
+
 
 
