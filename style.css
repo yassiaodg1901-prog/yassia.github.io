@@ -62,20 +62,20 @@ body{
   margin:0 0 14px;
   font-weight:600;
 }
-.accent{ color:black(--accent); }
+.accent{ color:var(--accent); }
 
 .hero p{
   margin:0 0 22px;
-  color:black(--muted);
+  color:var(--muted);
   font-size:18px;
 }
 .btn{
   display:inline-block;
   background:var(--accent);
-  color:var(--white);
+  color:var(--black);
   padding:12px 22px;
   border-radius:10px;
-  text-decoration:none;
+  text-decoration:black;
   font-weight:600;
   transition:transform .15s ease, opacity .15s ease;
 }
