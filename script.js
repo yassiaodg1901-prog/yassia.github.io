@@ -13,3 +13,17 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
+const showBtn = document.getElementById("showProject");
+const projectDiv = document.getElementById("project");
+const colorBtn = document.getElementById("colorBtn");
+
+showBtn.addEventListener("click", () => {
+  projectDiv.style.display = "block";
+});
+
+
+colorBtn.addEventListener("click", () => {
+  const randomColor = "#" + Math.floor(Math.random() * 16777215).toString(16);
+  projectDiv.style.backgroundColor = randomColor;
+});
+
