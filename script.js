@@ -27,3 +27,12 @@ colorBtn.addEventListener("click", () => {
   projectDiv.style.backgroundColor = randomColor;
 });
 
+document.getElementById("showCoin").onclick = () => {
+  document.getElementById("coinGame").style.display = "block";
+};
+
+document.getElementById("flip").onclick = () => {
+  document.getElementById("result").textContent =
+    Math.random() > 0.5 ? "🪙 Pile !" : "🪙 Face !";
+};
+
